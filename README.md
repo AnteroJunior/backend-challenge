@@ -3,47 +3,44 @@ Esse desafio traz a ideia de criar uma API para construir um
 fluxo de atendimento com serviços e pagamento de uma clínica.
 
 # Menu
-- Resumo;
-- Funcionalidades;
-- Regras;
-- Status das features;
+<p>Resumo | Funcionalidades | Regras | Status das features</p>
  
 
 # Funcionalidades:
-- Cliente e atendente fazem login;
-- Cliente pode selecionar serviços em uma lista e solicitar
+-[ ] Cliente e atendente fazem login;
+-[ ] Cliente pode selecionar serviços em uma lista e solicitar
 o atendimento;
-- O profissional verá as solicitações de atendimento e poderá
+-[ ] O profissional verá as solicitações de atendimento e poderá
 aceitar a que achar pertinente;
-- Ao final do atendimento, o profissional verá a duração
+-[ ] Ao final do atendimento, o profissional verá a duração
 total e a comissão a ser recebida;
 
 # Regras:
-- Usar PostgreSQL/MySQL;
-- README com instruções;
+-[x] Usar PostgreSQL/MySQL;
+-[x] README com instruções;
 - Testes unitários;
 
 # Status da aplicação
-- README.md;
+-[x] README.md;
 - Models
-	- Tabelas do banco de dados;
-	- Migrations feitas;
-	- Tabelas povoadas (seed);
+	-[x] Tabelas do banco de dados;
+	-[ ] Migrations feitas;
+	-[ ] Tabelas povoadas (seed);
 - Views
-	- Login;
-	- Tela de usuário;
-	- Tela do profissional;
+	-[ ] Login;
+	-[ ] Tela de usuário;
+	-[ ] Tela do profissional;
 	OBS: As telas de histórico serão colocadas em abas;
 - Controllers
-	- Função Profissionais
-	- Função Clientes
-	- Função Serviços
-	- Função Atendimentos
+	-[ ] Função Profissionais
+	-[ ] Função Clientes
+	-[ ] Função Serviços
+	-[ ] Função Atendimentos
 - Rotas
-	- Rotas Profissionais;
-	- Rotas Clientes;
-	- Rotas Serviços;
-	- Rotas Atendimentos;
+	-[ ] Rotas Profissionais;
+	-[ ] Rotas Clientes;
+	-[ ] Rotas Serviços;
+	-[ ] Rotas Atendimentos;
 
 # Como executar a aplicação
 Para executar a aplicação, o usuário deverá instalar todas
