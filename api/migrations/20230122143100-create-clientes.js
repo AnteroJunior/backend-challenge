@@ -10,13 +10,22 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       nome: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      senha: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       total_gasto: {
-        type: Sequelize.FLOAT
+        type: Sequelize.FLOAT(7, 2),
+        allowNull: false,
+        defaultValue: 0.00,
       },
       createdAt: {
         allowNull: false,

@@ -1,5 +1,8 @@
 'use strict';
 /** @type {import('sequelize-cli').Migration} */
+
+
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Atendimentos', {
@@ -10,15 +13,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       inicio: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: false,
       },
       fim: {
         type: Sequelize.DATE
       },
       status: {
-        type: Sequelize.ENUM
+        type: Sequelize.ENUM,
+        values: ['Aguardando', 'Em atendimento', 'Finalizado'],
+        defaultValue: 'Aguardando',
       },
-      tempo_total: {
+      tempo_total: { // EM MINUTOS
         type: Sequelize.INTEGER
       },
       valor_atendimento: {
@@ -26,6 +32,27 @@ module.exports = {
       },
       comissao_atendente: {
         type: Sequelize.FLOAT
+      },
+      cliente_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Clientes',
+          key: 'id'
+        }
+      },
+      profissional_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Profissionais',
+          key: 'id'
+        }
+      },
+      servico_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Servicos',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,

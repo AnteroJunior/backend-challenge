@@ -3,10 +3,11 @@ Esse desafio traz a ideia de criar uma API para construir um
 fluxo de atendimento com serviços e pagamento de uma clínica.
 
 # Menu
-<p>Resumo | Funcionalidades | Regras | Status das features</p>
+<p align='center'><a href="#resumo">Resumo</a> | <a href="#funcionalidades">Funcionalidades</a> | <a href="#regras">Regras</a> | <a href="#status">Status das features</a> | <a href="#rodando">Como executar</a></p>
  
 
-# Funcionalidades:
+<h2 id="funcionalidades">Funcionalidades</h2>
+
 - [ ] Cliente e atendente fazem login;
 - [ ] Cliente pode selecionar serviços em uma lista e solicitar
 o atendimento;
@@ -15,16 +16,18 @@ aceitar a que achar pertinente;
 - [ ] Ao final do atendimento, o profissional verá a duração
 total e a comissão a ser recebida;
 
-# Regras:
+<h2 id="regras">Regras</h2>
+
 - [x] Usar PostgreSQL/MySQL;
 - [x] README com instruções;
-- Testes unitários;
+- [ ] Testes unitários;
 
-# Status da aplicação
+<h2 id="status">Status da aplicação</h2>
+
 - [x] README.md;
 - Models
 	- [x] Tabelas do banco de dados;
-	- [ ] Migrations feitas;
+	- [x] Migrations feitas;
 	- [ ] Tabelas povoadas (seed);
 - Views
 	- [ ] Login;
@@ -42,18 +45,27 @@ total e a comissão a ser recebida;
 	- [ ] Rotas Serviços;
 	- [ ] Rotas Atendimentos;
 
-# Como executar a aplicação
-Para executar a aplicação, o usuário deverá instalar todas
-as dependências e pacotes com o <code>npm i</code> e executar
-por meio do <code>npm start</code>
+<h2 id="rodando"> Como executar a aplicação</h2>
 
-Após isso, o servidor/API estará funcionando no endereço:
-<code>localhost:3000</code>, tendo as seguintes rotas 
-disponíveis:
-/clientes e clientes/:id
-/profissionais e profissionais/:id
-/atendimentos
-/servicos e /servicos/:id
+1. Para executar a aplicação, o usuário deverá instalar todas as dependências e pacotes com o <code>npm i</code>.
+2. O usuário deverá criar uma variável de ambiente <code>.env</code> e criar as variavéis: 
+
+```
+PORT=port
+DATABASE=your_database_name
+USERNAME=your_username
+PASSWORD=your_password
+```
+3. Após adicionar o arquivo, agora é hora de fazer as migrações com o comando:
+``` npx sequelize-cli db:migrate ```
+
+4. Agora é só rodar o comando ``` npm start ``` para iniciar o servidor.
+
+5. Após isso, o servidor/API estará funcionando no endereço: <code>localhost:3000</code>, tendo as seguintes rotas disponíveis:
+<code>/clientes</code> e <code>clientes/:id</code>
+<code>/profissionais</code> e <code>profissionais/:id</code>
+<code>/atendimentos</code>
+<code>/servicos</code> e <code>/servicos/:id</code>
 
 # Tecnologias
 Para desenvolver o back-end da aplicação foram utilizadas:
