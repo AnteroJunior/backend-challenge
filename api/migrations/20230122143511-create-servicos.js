@@ -21,8 +21,12 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
+      valor: {
+        type: Sequelize.FLOAT(5,2),
+        allowNull: false
+      },
       comissao_total: {
-        type: Sequelize.FLOAT,
+        type: Sequelize.FLOAT(5,2),
         allowNull: false,
       },
       createdAt: {

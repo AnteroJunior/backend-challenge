@@ -24,7 +24,10 @@ module.exports = (sequelize, DataTypes) => {
   Atendimentos.init({
     inicio: DataTypes.DATE,
     fim: DataTypes.DATE,
-    status: DataTypes.ENUM,
+    status: {
+      type: DataTypes.ENUM,
+      values: ['Aguardando', 'Em atendimento', 'Finalizado']
+    },
     tempo_total: DataTypes.INTEGER,
     valor_atendimento: DataTypes.FLOAT,
     comissao_atendente: DataTypes.FLOAT

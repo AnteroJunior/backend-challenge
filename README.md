@@ -28,21 +28,21 @@ total e a comissão a ser recebida;
 - Models
 	- [x] Tabelas do banco de dados;
 	- [x] Migrations feitas;
-	- [ ] Tabelas povoadas (seed);
+	- [x] Tabelas povoadas (seed);
 - Views
 	- [ ] Login;
 	- [ ] Tela de usuário;
 	- [ ] Tela do profissional;
 	OBS: As telas de histórico serão colocadas em abas;
 - Controllers
-	- [ ] Função Profissionais
-	- [ ] Função Clientes
-	- [ ] Função Serviços
+	- [x] Função Profissionais
+	- [x] Função Clientes
+	- [x] Função Serviços
 	- [ ] Função Atendimentos
 - Rotas
-	- [ ] Rotas Profissionais;
-	- [ ] Rotas Clientes;
-	- [ ] Rotas Serviços;
+	- [x] Rotas Profissionais;
+	- [x] Rotas Clientes;
+	- [x] Rotas Serviços;
 	- [ ] Rotas Atendimentos;
 
 <h2 id="rodando"> Como executar a aplicação</h2>
@@ -61,7 +61,7 @@ PASSWORD=your_password
 
 4. Agora é só rodar o comando ``` npm start ``` para iniciar o servidor.
 
-5. Após isso, o servidor/API estará funcionando no endereço: <code>localhost:3000</code>, tendo as seguintes rotas disponíveis:
+5. Após isso, o servidor/API estará funcionando no endereço: <code>localhost:PORTA</code>, tendo as seguintes rotas disponíveis:
 <code>/clientes</code> e <code>clientes/:id</code>
 <code>/profissionais</code> e <code>profissionais/:id</code>
 <code>/atendimentos</code>

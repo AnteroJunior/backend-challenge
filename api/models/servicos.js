@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     nome: DataTypes.STRING,
     tempo: DataTypes.INTEGER,
     tempo_extra_porc: DataTypes.INTEGER,
+    valor: DataTypes.FLOAT,
     comissao_total: DataTypes.FLOAT
   }, {
     sequelize,
