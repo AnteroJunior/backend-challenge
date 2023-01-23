@@ -1,0 +1,11 @@
+.header {
+    background-color: rgb(66, 29, 160);
+    padding: 20px 0;
+    color: white;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

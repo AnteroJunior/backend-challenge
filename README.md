@@ -8,10 +8,10 @@ fluxo de atendimento com serviços e pagamento de uma clínica.
 
 <h2 id="funcionalidades">Funcionalidades</h2>
 
-- [ ] Cliente e atendente fazem login;
-- [ ] Cliente pode selecionar serviços em uma lista e solicitar
+- [x] Cliente e atendente fazem login;
+- [x] Cliente pode selecionar serviços em uma lista e solicitar
 o atendimento;
-- [ ] O profissional verá as solicitações de atendimento e poderá
+- [x] O profissional verá as solicitações de atendimento e poderá
 aceitar a que achar pertinente;
 - [ ] Ao final do atendimento, o profissional verá a duração
 total e a comissão a ser recebida;
@@ -30,20 +30,20 @@ total e a comissão a ser recebida;
 	- [x] Migrations feitas;
 	- [x] Tabelas povoadas (seed);
 - Views
-	- [ ] Login;
-	- [ ] Tela de usuário;
-	- [ ] Tela do profissional;
+	- [x] Login;
+	- [x] Tela de usuário;
+	- [x] Tela do profissional;
 	OBS: As telas de histórico serão colocadas em abas;
 - Controllers
 	- [x] Função Profissionais
 	- [x] Função Clientes
 	- [x] Função Serviços
-	- [ ] Função Atendimentos
+	- [x] Função Atendimentos
 - Rotas
 	- [x] Rotas Profissionais;
 	- [x] Rotas Clientes;
 	- [x] Rotas Serviços;
-	- [ ] Rotas Atendimentos;
+	- [x] Rotas Atendimentos;
 
 <h2 id="rodando"> Como executar a aplicação</h2>
 
@@ -73,10 +73,9 @@ Para desenvolver o back-end da aplicação foram utilizadas:
 - Sequelize (ORM);
 - MySQL;
 Pacotes:
-- jwt;
 - nodemon;
 - body-parser;
 
 Para o front-end foi utilizado:
 - React.js (Context API, useEffect, useState);
-- Figma (criação das telas);
+- Moment.js
