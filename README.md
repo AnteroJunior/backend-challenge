@@ -63,38 +63,44 @@ PASSWORD=your_password
 5. Agora é só rodar o comando ``` npm start ``` para iniciar o servidor.
 6. Após isso, o servidor/API estará funcionando no endereço: <code>localhost:PORTA</code>, tendo as seguintes rotas disponíveis:
 - Atendimentos:
-<code>
-Todos os atendimentos: /atendimentos
-Com o método POST, criamos um novo atendimento: /atendimentos/:idCliente-:idServico
-Atualizamos o atendimento com os seguintes parâmetros (PUT): /atendimentos/:idProfissional-:idAtendimento
-Finalizamos o atendimento (PUT): /atendimentos/finalizar/:idProfissional-:idAtendimento
-Atualizamos valores e tempo total (PUT): /atendimentos/checkout/:id-:tempo_total-:valor_atendimento-:comissao_atendente
-</code>
+
+Todos os atendimentos: <code>/atendimentos</code>
+
+Com o método POST, criamos um novo atendimento: <code>/atendimentos/:idCliente-:idServico</code>
+
+Atualizamos o atendimento com os seguintes parâmetros (PUT): <code>/atendimentos/:idProfissional-:idAtendimento</code>
+
+Finalizamos o atendimento (PUT): <code>/atendimentos/finalizar/:idProfissional-:idAtendimento</code>
+
+Atualizamos valores e tempo total (PUT): <code>/atendimentos/checkout/:id-:tempo_total-:valor_atendimento-:comissao_atendente</code>
 
 - Serviços:
-<code>
+
 Todos os métodos são GET
-Recupera todos os serviços: /servicos
-Recupera serviço por id: /servicos/:id
-</code>
+
+Recupera todos os serviços: <code>/servicos</code>
+
+Recupera serviço por id: <code>/servicos/:id</code>
+
 
 - Clientes:
-<code>
+
 Todos os métodos são GET
-Recupera cliente por id: /clientes/:cliente_id';
-Verifica se as informações passadas batem com o registro no banco: /clientes/login/:email-:senha
-</code>
+Recupera cliente por id: <code>/clientes/:cliente_id</code>
+
+Verifica se as informações passadas batem com o registro no banco: <code>/clientes/login/:email-:senha</code>
 
 - Profissionais:
-<code>
+
 Todos os métodos são GET
-Verifica se as informações passadas batem com o registro no banco: /profissionais/login/:email-:senha
-</code>
+
+Verifica se as informações passadas batem com o registro no banco: <code>/profissionais/login/:email-:senha</code>
 
 7. Agora só ir na pasta front-end e iniciar o Node ``` npm start ```
 
 <h2>Tecnologias</h2>
 Para desenvolver o back-end da aplicação foram utilizadas:
+
 - Node.js e Express.js;
 - Sequelize (ORM);
 - MySQL;
@@ -104,5 +110,6 @@ Pacotes:
 - cors;
 
 Para o front-end foi utilizado:
+
 - React.js (Context API, useEffect, useState);
 - Moment.js
