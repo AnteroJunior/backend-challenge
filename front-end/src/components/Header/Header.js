@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { AppContext } from '../../context';
 import './Header.css';
 
-const Header = ({ nome, email, total }) => {
+const Header = ({ nome, email }) => {
 
     const { setLogged, setUser } = useContext(AppContext);
 
@@ -14,7 +14,6 @@ const Header = ({ nome, email, total }) => {
                     <h5>{email}</h5>
                     <p style={{cursor: 'pointer'}} onClick={() => {setLogged(false); setUser({})}}>Sair</p>
                 </div>
-                <div><strong>Total: R$ {(total).toFixed(2)}</strong></div>
             </div>
         </div>
     )

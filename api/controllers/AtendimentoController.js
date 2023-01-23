@@ -51,6 +51,20 @@ class AtendimentoController {
             return res.status(500).json(error);
         }
     }
+
+    static async checkout(req, res) {
+        const { tempo_total, valor_atendimento, comissao_atendente, id } = req.params;
+        try {
+            await database.Atendimentos.update({ tempo_total, valor_atendimento, comissao_atendente }, {
+                where: {
+                    id
+                }
+            });
+            return res.status(200).send('Tabela atualizada!');
+        } catch (error) {
+            return res.status(500).json(error);
+        }
+    }
 }
 
 module.exports = AtendimentoController;
